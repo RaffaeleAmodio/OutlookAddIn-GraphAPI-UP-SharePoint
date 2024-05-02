@@ -8,13 +8,8 @@
 import { getUserProfile } from "../helpers/sso-helper";
 import { filterUserProfileInfo } from "./../helpers/documentHelper";
 
+Office.initialize(() => {});
 Office.onReady((info) => {
-  if (info.host === Office.HostType.Outlook) {
-    document.getElementById("getProfileButton").onclick = run;
-  }
-});
-
-Office.initialize((info) => {
   if (info.host === Office.HostType.Outlook) {
     document.getElementById("getProfileButton").onclick = run;
   }
