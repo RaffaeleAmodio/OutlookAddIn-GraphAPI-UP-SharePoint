@@ -14,6 +14,12 @@ Office.onReady((info) => {
   }
 });
 
+Office.initialize((info) => {
+  if (info.host === Office.HostType.Outlook) {
+    document.getElementById("getProfileButton").onclick = run;
+  }
+});
+
 export async function run() {
   getUserProfile(writeDataToOfficeDocument);
 }
