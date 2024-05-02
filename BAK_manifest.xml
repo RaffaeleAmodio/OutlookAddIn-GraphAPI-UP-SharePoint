@@ -88,6 +88,14 @@
           <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Task Pane"/>
         </bt:LongStrings>
       </Resources>
+      <!--<WebApplicationInfo>
+        <Id>{application GUID here}</Id>
+        <Resource>api://localhost:{PORT}/{application GUID here}</Resource>
+        <Scopes>
+          <Scope>User.Read</Scope>
+          <Scope>profile</Scope>
+        </Scopes>
+      </WebApplicationInfo>-->
     </VersionOverrides>
   </VersionOverrides>
 </OfficeApp>
