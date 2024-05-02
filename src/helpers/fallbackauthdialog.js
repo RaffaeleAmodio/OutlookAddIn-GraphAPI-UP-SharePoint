@@ -58,7 +58,7 @@ const publicClientApp = new PublicClientApplication(msalConfig);
 let loginDialog = null;
 let homeAccountId = null;
 let callbackFunction = null;
-
+Office.initialize(() => {});
 Office.onReady(() => {
   if (Office.context.ui.messageParent) {
     publicClientApp
